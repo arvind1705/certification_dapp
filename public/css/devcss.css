@@ -1,0 +1,587 @@
+.header-app-title{
+    text-align:center
+}
+
+[class^=wrapper]{
+    width:100%
+}
+[class^=wrapper]::after{
+    clear:both;
+    content:"";
+    display:table
+}
+.sr-only{
+    border:0;
+    clip:rect(0 0 0 0);
+    height:1px;
+    margin:-1px;
+    overflow:hidden;
+    padding:0;
+    position:absolute;
+    width:1px
+}
+.sr-only{
+    background:#000!important;
+    color:#fff!important
+}
+.accomplishment-stamps,.footer-app-nav .list,.wrapper-accomplishment-orgs .list-orgs{
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-indent:0
+}
+.accomplishment-stamps li,.footer-app-nav .list li,.wrapper-accomplishment-orgs .list-orgs li{
+    margin:0;
+    padding:0
+}
+a{
+    transition:color 125ms ease-in-out 0s,border-color 125ms ease-in-out 0s;
+    border-bottom:1px solid transparent;
+    color:#0079bc;
+    text-decoration:none
+}
+
+img{
+    border:0
+}
+
+footer,header,main,nav{
+    display:block
+}
+
+/*! | DEV License | */
+html{
+    font-family:sans-serif;
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%
+}
+a{
+    background-color:transparent
+}
+a:active,a:hover{
+    outline:0
+}
+strong{
+    font-weight:700
+}
+hr{
+    box-sizing:content-box;
+    height:0
+}
+body{
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale
+}
+*{
+    box-sizing:border-box
+}
+img{
+    vertical-align:middle
+}
+body{
+    color:#4d4b4b;
+    font-size:1rem;
+    font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+p,ul{
+    margin:0 0 1.25rem
+}
+.wrapper-accomplishment-statement .accomplishment-course,.wrapper-accomplishment-statement .accomplishment-recipient,h1,h2,h3{
+    margin:0 0 1.25rem;
+    font-weight:400;
+    font-size:1rem;
+    line-height:1.5;
+    color:#4d4b4b
+}
+.wrapper-accomplishment-title .accomplishment-title{
+    margin-bottom:1.25rem;
+    font-size:2.375rem;
+    line-height:1.4
+}
+.wrapper-accomplishment-statement .accomplishment-recipient{
+    margin-bottom:1.25rem;
+    font-size:1.75rem;
+    line-height:1.4
+}
+.wrapper-accomplishment-statement .accomplishment-course{
+    margin-bottom:.625rem;
+    font-size:1.5rem;
+    line-height:1.5
+}
+.accomplishment-metadata-title{
+    margin-bottom:.625rem;
+    font-size:.875rem;
+    font-weight:600;
+    text-transform:uppercase;
+    line-height:1.6;
+    letter-spacing:.0625rem
+}
+.accomplishment-stamps .title{
+    margin-bottom:.3125rem;
+    font-size:.75rem;
+    font-weight:600;
+    text-transform:uppercase;
+    line-height:1.5;
+    letter-spacing:.03125rem
+}
+.accomplishment-stamps .emphasized,.emphasized.copy-micro{
+    color:#000;
+    font-weight:400
+}
+.accomplishment-metadata-copy,.accomplishment-stamps .emphasized,.copy-micro,.footer-app,.wrapper-accomplishment-statement .copy{
+    color:#4d4b4b
+}
+.footer-app p,.footer-app ul{
+    margin-bottom:1.25rem
+}
+.accomplishment-metadata-copy,.wrapper-accomplishment-statement .copy{
+    font-size:.875rem;
+    line-height:1.6
+}
+.accomplishment-stamps .emphasized,.copy-micro,.footer-app{
+    font-size:.75rem;
+    line-height:1.5;
+     margin-right:50px;
+}
+.accomplishment,.accomplishment-metadata,.footer-app,.header-app{
+    max-width:73.125rem;
+    margin-left:auto;
+    margin-right:auto
+}
+.accomplishment-metadata::after,.accomplishment::after,.footer-app::after,.header-app::after{
+    clear:both;
+    content:"";
+    display:table
+}
+body{
+    background:#efefef
+}
+.accomplishment-rendering{
+    background:#fcfcfc;
+    box-shadow:0 1px 2px 1px rgba(167,164,164,.25)
+}
+.header-app .logo,.img-link{
+    border-bottom:none;
+    padding:0
+}
+.header-app .logo:active,.header-app .logo:focus,.header-app .logo:hover,.img-link:active,.img-link:focus,.img-link:hover{
+    border-bottom:0
+}
+.wrapper-header{
+    background:#fff
+}
+.accomplishment-statement,.wrapper-header{
+    border-bottom:1px solid #cdd7db
+}
+.footer-app-nav .list .nav-item{
+    display:inline-block;
+    margin-right:.625rem
+}
+.footer-app-related .logo-opendev{
+    width:120px
+}
+.wrapper-accomplishment-title .accomplishment-title{
+    font-weight:300;
+    line-height:1.1;
+    text-transform:uppercase;
+    color:#0079bc
+}
+.wrapper-accomplishment-title .accomplishment-title-label{
+    display:block;
+    font-size:2.5rem
+}
+@media (min-width:768px){
+    .wrapper-accomplishment-title .accomplishment-title-label{
+        font-size:3rem
+    }
+}
+.wrapper-accomplishment-title .accomplishment-title-type{
+    display:block;
+    font-size:2.875rem
+}
+@media (min-width:768px){
+    .wrapper-accomplishment-title .accomplishment-title-type{
+        font-size:3.5rem
+    }
+}
+.wrapper-accomplishment-title.verified .accomplishment-title{
+    color:#008801
+}
+.wrapper-accomplishment-title.verified .accomplishment-title-label{
+    margin-left:13px;
+    display:block;
+    font-size:3.25rem;
+    letter-spacing:.16em
+}
+@media (min-width:768px){
+    .wrapper-accomplishment-title.verified .accomplishment-title-label{
+        font-size:3.75rem;
+        margin-left:0
+    }
+}
+.wrapper-accomplishment-title.verified .accomplishment-title-type{
+    display:block;
+    font-size:1.25rem
+}
+@media (min-width:768px){
+    .wrapper-accomplishment-title.verified .accomplishment-title-type{
+        font-size:1.4375rem
+    }
+}
+.wrapper-accomplishment-statement .accomplishment-course,.wrapper-accomplishment-statement .accomplishment-recipient{
+    line-height:1.2;
+    color:#000;
+    font-weight:600
+}
+.wrapper-accomplishment-orgs img{
+    float:right;
+    max-width:100%;
+    max-height:100px
+}
+@media (min-width:768px){
+    .wrapper-accomplishment-statement .accomplishment-recipient{
+        font-size:2.5rem
+    }
+    .wrapper-accomplishment-statement .accomplishment-course{
+        font-size:1.75rem
+    }
+    .wrapper-accomplishment-statement .copy{
+        font-size:1.125rem
+    }
+}
+.accomplishment-stamps .title{
+    color:#a7a4a4;
+    display:block;
+    margin-bottom:0
+}
+.accomplishment-stamps .emphasized{
+    display:block;
+    font-weight:700;
+    color:#6b6969
+}
+body,html{
+    height:100%;
+    margin:0;
+    padding:0;
+    background:#eef1f2
+}
+.header-app{
+    margin:0 auto;
+    padding:17px 2%
+}
+.header-app .logo{
+    display:inline-block;
+    width:77px;
+    margin:0 auto;
+    vertical-align:text-bottom
+}
+.header-app .logo-img{
+    max-width:100%
+}
+.header-app-title{
+    margin:0
+}
+.accomplishment-metadata{
+    margin:0 3%;
+    padding:.625rem 1.25rem
+}
+@media (min-width:768px){
+    .accomplishment-metadata{
+        margin:0 auto;
+        padding:.625rem 1.875rem
+    }
+    .accomplishment-metadata-aboutdev{
+        width:48.93617%;
+        float:left;
+        margin-right:2.12766%
+    }
+    .accomplishment-metadata-aboutcert{
+        width:48.93617%;
+        float:right;
+        margin-right:0
+    }
+}
+.footer-app{
+    margin:0 3%;
+    border-top:.25rem solid #e5e9eb;
+    padding:1.25rem
+}
+@media (min-width:768px){
+    .footer-app{
+        margin:0 auto;
+        padding:1.25rem 1.875rem
+    }
+    .footer-app-legal{
+        width:48.93617%;
+        float:left;
+        margin-right:2.12766%
+    }
+}
+.footer-app-legal .copyright-trademarks{
+    margin-top:1.25rem
+}
+.footer-app-legal .copyright-trademarks .copyright{
+    display:block
+}
+@media (min-width:768px){
+    .footer-app-related{
+        width:48.93617%;
+        float:right;
+        margin-right:0;
+        text-align:right
+    }
+}
+.accomplishment-rendering{
+    margin:2%;
+    border:1px solid #cdd7db;
+    padding:7% 5% 5%;
+    background-color:#fcfcfc;
+    text-align:center
+}
+.wrapper-accomplishment-title .accomplishment-title{
+    display:block;
+    margin-top:.625rem;
+    margin-bottom:2.5rem
+}
+@media (min-width:768px){
+    .accomplishment-rendering{
+        text-align:left;
+        padding:5% 5% 3%
+    }
+    .wrapper-accomplishment-title .accomplishment-title{
+        display:inline-block;
+        vertical-align:middle;
+        width:48.93617%
+    }
+}
+.wrapper-accomplishment-orgs{
+    margin-bottom:1.25rem;
+    margin-top:1.25rem;
+    text-align:center
+}
+@media (min-width:768px){
+    .wrapper-accomplishment-orgs{
+        margin-left:1.04167%;
+        text-align:right;
+        display:inline-block;
+        vertical-align:middle;
+        width:48.93617%;
+        margin-top:0;
+        margin-bottom:2.5rem
+    }
+}
+.accomplishment-statement{
+    margin-top:1.25rem;
+    margin-bottom:2.5rem;
+    padding-bottom:1.25rem
+}
+@media (min-width:1024px){
+    .wrapper-accomplishment-orgs,.wrapper-accomplishment-title .accomplishment-title{
+        width:48.93617%
+    }
+    .accomplishment-statement{
+        display:inline-block;
+        vertical-align:middle;
+        width:65.95745%;
+        margin-top:2.5rem;
+        margin-bottom:2.5rem;
+        border:0
+    }
+}
+.accomplishment-statement .accomplishment-course,.accomplishment-statement .accomplishment-recipient,.accomplishment-statement .accomplishment-statement-detail,.accomplishment-statement .accomplishment-summary{
+    display:block;
+    margin-bottom:1.25rem
+}
+.wrapper-accomplishment-stamps{
+    margin-top:1rem
+}
+.accomplishment-stamps .accomplishment-stamp-platform{
+    margin-bottom:1.25rem
+}
+.accomplishment-stamps .accomplishment-stamp-date,.accomplishment-stamps .accomplishment-stamp-validity{
+    margin-bottom:.625rem
+}
+.accomplishment-stamps .accomplishment-stamp-platform .logo-img{
+    width:125px;
+    margin-top:2px
+}
+@media (min-width:1024px){
+    .accomplishment-stamps .accomplishment-stamp-platform{
+        margin-right:1.04167%;
+        display:inline-block;
+        vertical-align:middle;
+        width:14.89362%;
+        margin-bottom:.625rem
+    }
+}
+@media (min-width:768px){
+    .accomplishment-stamps .accomplishment-stamp-date{
+        margin-right:1.04167%;
+        display:inline-block;
+        vertical-align:middle;
+        width:31.91489%
+    }
+}
+@media (min-width:1024px){
+    .accomplishment-stamps .accomplishment-stamp-date{
+        width:23.40426%
+    }
+}
+@media (min-width:480px){
+    .accomplishment-stamps .accomplishment-stamp-validity{
+        display:inline-block;
+        vertical-align:middle;
+        width:40.42553%
+    }
+}
+.certificate-verified .accomplishment-rendering{
+    background-color:#fff;
+    background-image:url(/images/verified-seal-grayscale.png);
+    background-repeat:no-repeat;
+    background-position:center 30px;
+    background-size:80% auto
+}
+@media (min-width:768px){
+    .certificate-verified .accomplishment-rendering{
+        background-position:center 40px;
+         background-size:50% auto
+    }
+}
+@media (min-width:1024px){
+    .certificate-verified .accomplishment-rendering{
+        background-position:-325px -50px;
+        background-size:100% auto
+    }
+}
+@page{
+    size:landscape
+}
+@media print and (color){
+    *{
+        -webkit-print-color-adjust:exact;
+        print-color-adjust:exact
+    }
+}
+@media print{
+    .wrapper-accomplishment-metadata,.wrapper-footer,.wrapper-header{
+        display:none!important
+    }
+    body,html{
+        background:#fff!important;
+        color:#000!important
+    }
+    .wrapper-accomplishment-rendering{
+        padding:0!important
+    }
+    img{
+        max-width:100%!important
+    }
+    img,ul{
+        page-break-inside:avoid
+    }
+    body{
+        margin:2.5rem .625rem 0!important;
+        padding:0;
+        height:auto
+    }
+    .wrapper-view{
+        margin-bottom:0!important
+    }
+    [class^=wrapper]::after{
+        display:none
+    }
+    .wrapper-accomplishment-statement .accomplishment-recipient{
+        margin-bottom:1.25rem;
+        font-size:1.75rem;
+        line-height:1.2
+    }
+    .wrapper-accomplishment-statement .accomplishment-course{
+        margin-bottom:.625rem;
+        font-size:1.5rem;
+        line-height:1.2
+    }
+    .wrapper-accomplishment-statement .copy{
+        font-size:.875rem;
+        line-height:1.6
+    }
+    .accomplishment-rendering{
+        text-align:left;
+        top:0!important;
+        box-shadow:none;
+        border:none;
+        padding:.625rem 2.5rem;
+        background-color:#fff
+    }
+    .accomplishment-rendering .wrapper-accomplishment-title .accomplishment-title{
+        display:inline-block;
+        vertical-align:middle;
+        width:65.95745%;
+        margin-top:.625rem;
+        margin-bottom:0
+    }
+    .accomplishment-rendering .wrapper-accomplishment-orgs{
+        display:inline-block;
+        vertical-align:middle;
+        width:31.91489%;
+        margin-top:2.5rem;
+        margin-bottom:2.5rem
+    }
+    .accomplishment-rendering .wrapper-accomplishment-orgs img{
+        max-width:100%;
+        max-height:100px
+    }
+    .accomplishment-rendering .accomplishment-statement{
+        text-align:left;
+        display:inline-block;
+        vertical-align:top;
+        width:65.95745%;
+        margin-top:3.75rem;
+        border-bottom:0
+    }
+    .accomplishment-stamps,.wrapper-accomplishment-stamps{
+        margin-top:0
+    }
+    .accomplishment-stamps .accomplishment-stamp-platform{
+        margin-right:1.04167%;
+        display:inline-block;
+        vertical-align:top;
+        width:6.38298%;
+        margin-bottom:0;
+        padding-top:0
+    }
+    .accomplishment-stamps .accomplishment-stamp-date{
+        margin-right:1.04167%;
+        width:23.40426%;
+        display:inline-block;
+        vertical-align:top
+    }
+    .accomplishment-stamps .accomplishment-stamp-validity{
+        width:40.42553%;
+        display:inline-block;
+        vertical-align:top
+    }
+    .wrapper-accomplishment-statement .copy{
+        color:#6b6969
+    }
+    .wrapper-accomplishment-statement .accomplishment-course,.wrapper-accomplishment-statement .accomplishment-recipient,.wrapper-accomplishment-statement .accomplishment-statement-detail,.wrapper-accomplishment-statement .accomplishment-summary{
+        margin:0 0 1.25rem
+    }
+    .accomplishment-stamps .title{
+        font-size:.625rem;
+        line-height:1.5
+    }
+    .accomplishment-stamps .emphasized{
+        font-weight:400;
+        font-size:.625rem;
+        line-height:1.5
+    }
+    .certificate-verified .accomplishment-rendering{
+        border:1px solid #cdd7db;
+        background-position:-325px -50px;
+        background-size:100% auto
+    }
+    .certificate-verified .accomplishment-rendering{
+        background-image:url(professionaled-seal-grayscale.png)
+    }
+}
+ 

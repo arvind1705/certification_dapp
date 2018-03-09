@@ -1,0 +1,51 @@
+#login-panel {
+  margin-top: 90px 
+}
+.container{
+  width:600px;
+  margin:0 auto;
+  margin-top:40px;
+  padding-bottom: 30px;
+}
+.message{
+ padding: 13px;
+  margin-top: 15px;
+  border-radius: 4px;
+  border: #ccc solid 1px;
+}
+.message p{
+ margin: 0px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: arial;
+}
+.success{
+ color: #2C7635;
+ background-color: #DFF0D4;
+ border: #D6E9C4 solid 1px;
+}
+.error {
+ color: #fff;
+ background-color: #FF9494;
+ border: #FF9494 solid 1px;
+}
+.message.success, .message.error {
+  float: right;
+  margin-top: -5px;
+}
+.panel-primary > .panel-heading, .panel .panel-heading {
+  color: #fff;
+  background-color: #6ed878;
+  border-color: #6ed878;
+}
+.panel.panel-primary {
+  border-color: #6ed878;
+}
+.btn.btn-primary {
+  color: #8e8e8e;
+  background-color: #6ed878;
+  border-color: #6ed878;
+}
+.message.success a {
+  color: #2a6496 !important;
+}

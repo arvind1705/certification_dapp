@@ -1,1 +1,1 @@
-# certification_dapp
+# certify-dapp
