@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create Certificates</title>
+    <link rel="icon" type="image/png" href="/images/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/css/tether.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="login-panel" class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+            <div class="login-panel panel panel-default">
+                <div class="panel-heading">Log in</div>
+                <div class="panel-body">
+                    <form id="form-login" role="form">
+                        <fieldset>
+                            <div class="form-group">
+                                <input class="form-control" aria-describedby="emailHelp" type="email" name="user" id="user" placeholder="Email" required
+                                />
+                                <small id="emailHelp" class="form-text text-muted">Make sure it is an address registered in the system.</small>
+
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="password" name="password" id="password" placeholder="Password" required />
+                            </div>
+                            <button id="login-button" type="submit" class="btn btn-primary btn-center">Login</button>
+                            <h3 class="text-danger" id="login-disabled-text" style="display:none;"></h3>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-panel" class="col-sm-10 col-sm-offset-1 col-lg-10 col-lg-offset-1 main" style="display:none;">
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="page-header">Certificate Creation</h1>
+            </div>
+            <div class="col-lg-5 col-lg-offset-1">
+                <img src="/images/eblockfy-logo.png" alt="eBlockfy España">
+            </div>
+        </div>
+        <!--/.row-->
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">You are welcome!</div>
+                    <div class="panel-body">
+                        <p>Form to enter certificate details.
+                            <br/> After creation, you'll get link to view and print certificate.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">Certificate</div>
+                    <div class="panel-body">
+                        <form id="form-certification">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <p>Insert course information</p>
+                                    <div class="form-group">
+                                        <label>Course name:</label>
+                                        <input class="form-control" name="courseName" id="courseName" value="Introducción práctica a Blockchain para desarrolladores"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Type of certificate:</label>
+                                        <input class="form-control" name="courseCertificated" id="courseCertificated" value="Certificado de Asistencia" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Course Period:</label>
+                                        <input class="form-control" name="courseDate" id="courseDate" value="los días 21,22,23 y 24 de Enero 2017" required>
+                                    </div>
+                                </div>
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">User information </div>
+                                    <div class="panel-body">
+                                        <p>Insert the student information.</p>
+
+                                        <div class="form-group">
+                                            <label>Student's name</label>
+                                            <input class="form-control" name="alumnName" id="alumnName" value="Guillermo Lapuente" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>From the student</label>
+                                            <input class="form-control" name="alumnId" id="alumnId" value="XXXXXXXX-A" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Ethereum Wallet Address</label>
+                                            <input class="form-control" name="alumnAddress" id="alumnAddress" value="0x2D02318bFbbF9Dd26e30AF00A5d4b18E7f0aA5Ce" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button id="submit-form" type="submit" class="btn btn-primary">Create certificate</button>
+                                <div id="loading-section" style="display:none">
+                                    <img style="margin: 10px" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="
+                                    />
+                                    <p>This process can take several minutes. Please wait. You can check the status of the transaction.
+                                        <a id="transacion-id-link" target="_blank" href="">View here</a>.</p>
+                                </div>
+
+                                <div id="certificate-link-container" class="message success" style="display:none;">
+                                    <p>
+                                        <strong>Certificate created! </strong> You can see it
+                                        <a id="certificate-link" target="_blank" href="#">View here</a>!</p>
+                                </div>
+
+                                <div id="certificate-error-container" class="message error" style="display:none;">
+                                    <strong>Error while creating certificate. </strong>
+                                    <p id="error-text-feedback"></p>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /.panel-->
+        </div>
+        <!-- /.row -->
+
+    </div>
+
+</body>
+
+</html>
