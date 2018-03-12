@@ -10,86 +10,78 @@
 </head>
 
 <body class="layout-accomplishment view-valid-accomplishment ltr is-idverified certificate certificate-verified" data-view="valid-accomplishment">
-   
-
-        <hr class="divider sr-only">
-
-        <main class="accomplishment accomplishment-main">
-
-            <div class="wrapper-accomplishment-rendering">
-                <div class="accomplishment-rendering">
-                    <div class="wrapper-accomplishment-title verified">
-                        <h2 class="accomplishment-title">
+    <hr class="divider sr-only">
+    <main class="accomplishment accomplishment-main">
+        <div class="wrapper-accomplishment-rendering">
+            <div class="accomplishment-rendering">
+                <div class="wrapper-accomplishment-title verified">
+                    <h2 class="accomplishment-title">
                             <span class="accomplishment-title-label">Verified</span>
                             <span class="accomplishment-title-type">
                                 <%= courseCertificated %>
                             </span>
                         </h2>
-                        <div class="wrapper-accomplishment-orgs">
-                            <h3 class="accomplishment-orgs-title sr-only">With the support of the following organizations</h3>
-                            <ul class="wrapper-orgs list-orgs">
-                                <li class="wrapper-organization">
-                                    
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="wrapper-accomplishment-orgs">
+                        <h3 class="accomplishment-orgs-title sr-only">With the support of the following organizations</h3>
+                        <ul class="wrapper-orgs list-orgs">
+                            <li class="wrapper-organization">
+                            </li>
+                        </ul>
                     </div>
-                    <div class="wrapper-accomplishment-statement">
-                        <div class="accomplishment-statement">
-                            <p class="accomplishment-statement-lead">
-                                <span class="accomplishment-statement-detail copy">Certifies that</span>
-                                <strong class="accomplishment-recipient">
+                </div>
+                <div class="wrapper-accomplishment-statement">
+                    <div class="accomplishment-statement">
+                        <p class="accomplishment-statement-lead">
+                            <span class="accomplishment-statement-detail copy">Certifies that</span>
+                            <strong class="accomplishment-recipient">
                                     <%= alumnName %>
                                 </strong>
-                                <span class="accomplishment-summary copy">has completed the course in</span>
-
-                                <span class="accomplishment-course">
+                            <p class="accomplishment-recipient">
+                                <%= alumnAddress %>
+                            </p>
+                            <span class="accomplishment-summary copy">has completed the course in</span>
+                            <span class="accomplishment-course">
                                     <span class="accomplishment-course-name">
                                         <%= courseName %>
                                     </span>
-                                </span>
-                                <span class="accomplishment-statement-detail copy">
+                            </span>
+                            <span class="accomplishment-statement-detail copy">
                                     <%= courseDate %>
                                 </span>
-                                <span class="accomplishment-statement-detail copy">a course offered by Jain University.</span>
-                            </p>
-                        </div>
+                            <span class="accomplishment-statement-detail copy">a course offered by Jain University.</span>
+                        </p>
                     </div>
-                    <div class="wrapper-accomplishment-stamps">
-                        <ul class="accomplishment-stamps copy-list">
-                            <li class="accomplishment-stamp-platform">
-                                <img class="logo-img" src="/images/certified.png" height="20%" alt="dev">
-                            </li>
-                            <li class="accomplishment-stamp-date">
-                                <span class="title">Certificate creation date</span>
-                                <span class="copy-micro emphasized">
+                </div>
+                <div class="wrapper-accomplishment-stamps">
+                    <ul class="accomplishment-stamps copy-list">
+                        <li class="accomplishment-stamp-platform">
+                            <img class="logo-img" src="/images/certified.png" height="20%" alt="dev">
+                        </li>
+                        <li class="accomplishment-stamp-date">
+                            <span class="title">Certificate creation date</span>
+                            <span class="copy-micro emphasized">
                                     <%= certificationDate %>
                                 </span>
-                            </li>
-                            <li class="accomplishment-stamp-platform">
-                                    <img class="logo-img" src="/images/Blockchain.png" height="20%" alt="dev">
-                            </li>
-                            <% if (txId) { %>
-                                <li class="accomplishment-stamp-validity">
-                                    <span class="title">Ethereum Transaction ID</span>
-                                    <span class="emphasized">
+                        </li>
+                        <li class="accomplishment-stamp-platform">
+                            <img class="logo-img" src="/images/Blockchain.png" height="20%" alt="dev">
+                        </li>
+                        <% if (txId) { %>
+                            <li class="accomplishment-stamp-validity">
+                                <span class="title">Ethereum Transaction ID</span>
+                                <span class="emphasized">
                                         <a target="_blank" href="https://ropsten.etherscan.io/tx/<%= txId %>">
                                             <%= txId %>
                                         </a>
                                     </span>
-                                </li>
-                                <% } %>
-                        </ul>
-                    </div>
+                            </li>
+                            <% } %>
+                    </ul>
                 </div>
             </div>
-
-
-        </main>
-
-        <hr class="divider sr-only">
-
-        
+        </div>
+    </main>
+    <hr class="divider sr-only">
 </body>
 
 </html>
