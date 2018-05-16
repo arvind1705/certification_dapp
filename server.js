@@ -62,7 +62,7 @@ app.get('/certificated/:hashCertificated/:txId?', function (req, res) {
 
 // endpoint for 404 errors
 app.get('*', function(req, res){
-  res.send('what???', 404);
+  res.send('404 Page not found.', 404);
 });
 
 // start the localhost server at port 3000

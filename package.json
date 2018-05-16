@@ -4,6 +4,7 @@
   "description": "A simple web example of work with the Ethereum Blockchain for makes certifications.",
   "main": "server.js",
   "dependencies": {
+    "abi-decoder": "^1.1.0",
     "body-parser": "^1.18.2",
     "buffer": "^5.0.8",
     "ejs": "^2.5.7",
