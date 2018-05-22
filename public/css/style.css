@@ -20,7 +20,7 @@
   font-family: arial;
 }
 .success{
- color: #2C7635;
+ color: rgb(50, 233, 71);
  background-color: #DFF0D4;
  border: #D6E9C4 solid 1px;
 }
@@ -34,18 +34,18 @@
   margin-top: -5px;
 }
 .panel-primary > .panel-heading, .panel .panel-heading {
-  color: #fff;
-  background-color: #6ed878;
-  border-color: #6ed878;
+  color: rgb(255, 255, 255);
+  background-color: #eb1ad9;
+  border-color: #ac22a0;
 }
 .panel.panel-primary {
-  border-color: #6ed878;
+  border-color: #ac22a0;
 }
 .btn.btn-primary {
-  color: #8e8e8e;
-  background-color: #6ed878;
-  border-color: #6ed878;
+  color: rgb(255, 255, 255);
+  background-color: #ac22a0;
+  border-color: #ac22a0;
 }
 .message.success a {
-  color: #2a6496 !important;
+  color: #197dd4 !important;
 }
